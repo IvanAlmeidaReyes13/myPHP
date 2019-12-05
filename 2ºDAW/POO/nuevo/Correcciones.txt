@@ -1,0 +1,2 @@
+Linea 45 eliminar el trim en nombre para que coja los datos
+linea 37 en la inserccion de datos habia que hacerlo a traves del array datos y con sus comillas

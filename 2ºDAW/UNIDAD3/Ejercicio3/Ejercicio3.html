@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            background-color: #666699;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="Ejercicio3.php">
+    <select name="estadisticas">
+        <option value="Puntos_por_partido">Puntos</option>
+        <option value="Rebotes_por_partido">Rebotes</option>
+        <option value="Asistencias_por_partido">Asistencias</option>
+        <option value="Tapones_por_partido">Tapones</option>
+    </select>
+    <select name="temporada">
+        <option value="00/01">00/01</option>
+        <option value="01/02">01/02</option>
+        <option value="02/03">02/03</option>
+        <option value="03/04">03/04</option>
+        <option value="04/05">04/05</option>
+        <option value="05/06">05/06</option>
+    </select>
+    <input type="number" name="jugadores">
+    <input type="submit" name="enviar">
+</form>
+</body>
+</html>
