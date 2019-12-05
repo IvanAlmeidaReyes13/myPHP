@@ -14,5 +14,4 @@ WELCOME
 
     <button type="submit" name="pagina" value="3">Jugar</button>
 </form>
-
 </body>
