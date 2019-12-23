@@ -31,7 +31,7 @@ public function getTiposVias(){
         $ret=null;
         $sql="INSERT INTO datos(DNI, nombre, apellido1, apellido2, direccion, tipoVia) VALUES ($arrayDatos[0],'$arrayDatos[1]','$arrayDatos[2]','$arrayDatos[3]','$arrayDatos[4]',$arrayDatos[5])";
         $result=$this->conexion->query($sql);
-        return $ret;
+
 
 
     }

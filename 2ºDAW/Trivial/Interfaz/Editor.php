@@ -1,14 +1,21 @@
 <?php
-$pagina=$_POST['pagina']??2;
+$pagina=$_POST['pagina']??2; //si la pagina esta vacio la mandamos que sea 2 para permanecer en esta pagina
 $_SESSION['pagina']=$pagina;
 include('Interfaz/funciones.php');
+//a continuacion se implmenta el formulario para crear preguntas, la imagen
+// esta comentada ya que no sabia bien la manera en que proteger los ficheros que introducimos y por seguridad prefiero no incluirlo
 ?>
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
-EDITOR
+EDITOR <br>
 <form action="Editor.php" method="post">
+
+
+    <!--Introduce una imagen:
+    <input type="file" name="imagen">-->
+
     Introduce una pregunta:
     <input type="text" name="pregunta">
     <br>
@@ -25,14 +32,14 @@ EDITOR
     <button type="submit" name="enviar" value="true">Guardar</button>
     </form>
 
-</form>
 <?php
 
 $enviar=$_POST['enviar']??false;
-if($enviar) {
+if($enviar) {//almacenamos las preguntas y las guardamos
 
     $almacenPreguntas=almacenarPregunta();
     guardarCSV($almacenPreguntas);
+
 
 
 }

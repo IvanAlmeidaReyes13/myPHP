@@ -1,4 +1,4 @@
-<?php
+<?php//pagina del registro donde debes introducir tu nombre en caso de estar vacio para empezar la partida
 $nombre=$_POST['nombre']??"";
 $_SESSION['nombre']==$nombre;
 if($nombre==""){

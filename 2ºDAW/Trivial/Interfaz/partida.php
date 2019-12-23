@@ -1,4 +1,5 @@
-<?php
+<?php //pagina de la partida
+//en primer lugar comprobamos todos los datos de la sesion para inialiarlos a 0 o "" en caso de que fuese necesario
 $pagina=$_POST['pagina']??4;
 $_SESSION['pagina']=$pagina;
 
@@ -13,7 +14,7 @@ $_SESSION['fin']=$fin;
 
 include('Interfaz/funciones.php');
 
-if($_SESSION['nombre']!=""){
+if($_SESSION['nombre']!=""){ //si el nombre del jugador es distinto de vacio se puede jugar, de lo contrario habria problemas de puntuacion y demas
 
     $lectura = leerCSV();
 
@@ -23,7 +24,7 @@ if($_SESSION['nombre']!=""){
 
     $_SESSION['fin']=$fin;
 
-    if($_SESSION['fin']==false) {
+    if($_SESSION['fin']==false) { //aqui se propone el formulario con las distintas respuesta posibles
 
         echo $lectura[$ronda][0] . "<br>";
         ?>

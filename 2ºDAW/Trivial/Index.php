@@ -9,6 +9,9 @@ $_SESSION['pagina'] = $pagina;
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <form action="Index.php" method="post">
 
+    <span>
+    TRIVIAL
+  </span> <br>
     <?php
 
     switch ($_SESSION['pagina']){

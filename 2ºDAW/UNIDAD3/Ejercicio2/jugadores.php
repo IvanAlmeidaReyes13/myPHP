@@ -9,12 +9,12 @@ if ($enviar) {
 
     @$cnn = mysqli_connect(HOST, US, PW, BBDD);
     if ($cnn) {
-        $sql = "SELECT distinct nombre FROM jugadores where Nombre_equipo like '$equipo'";
+        $sql = "SELECT distinct conferencia FROM equipo";
         $rest = mysqli_query($cnn, $sql);
 
         while ($row2 = mysqli_fetch_assoc($rest)) {
             foreach ($row2 as $value) {
-                echo $value."<br>";
+                echo "<option name='$value'>".$value."</option>"."<br>";
             }
         }
 
